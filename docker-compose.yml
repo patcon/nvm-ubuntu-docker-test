@@ -4,8 +4,10 @@ services:
 
   ubuntu:
     build:
+      context: .
       dockerfile: ubuntu.Dockerfile
 
   node-debian:
     build:
+      context: .
       dockerfile: node-debian.Dockerfile
