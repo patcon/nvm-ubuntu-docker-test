@@ -11,7 +11,6 @@ services:
       mode: replicated
       replicas: 0
     volumes:
-      - maintenancedata:/root
       - ./scripts:/root/scripts
       - ./app:/var/www/html/app
 
@@ -24,7 +23,6 @@ services:
       mode: replicated
       replicas: 0
     volumes:
-      - maintenancedata:/root
       - ./scripts:/root/scripts
       - ./app:/var/www/html/app
 
