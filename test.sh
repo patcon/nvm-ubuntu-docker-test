@@ -3,7 +3,7 @@
 set -euo pipefail
 
 nvm install v14
-npm install --global npm@7.0.15
+npm install --global npm@6.x
 
 # Debug output
 node --version
