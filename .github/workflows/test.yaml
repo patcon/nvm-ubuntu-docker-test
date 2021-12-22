@@ -1,0 +1,27 @@
+on:
+  push:
+
+jobs:
+  runner:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2.4.0
+
+    - name: "Build Docker images"
+      run: make setup
+
+    # Allows SSH access into CI environment for up to 1h.
+    # Use `touch ~/continue` with session to end each one.
+    # Only enable when trying to troubleshoot.
+    #
+    # Note: Be cautious, as secrets in environment can be compromised.
+    #   Consider using in PRs from forks, without secrets available.
+    #
+    # See: https://github.com/lhotari/action-upterm
+    - name: Create upterm session for debug
+      uses: lhotari/action-upterm@v1
+      if: ${{ false }}
+      # if: ${{ always() }}
+
+    - name: "Run test"
+      run: make test-all
