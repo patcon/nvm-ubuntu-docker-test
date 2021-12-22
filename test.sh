@@ -28,5 +28,6 @@ npm run check-path
 echo '--- This will work!'
 ./bin/test-env-node
 # Run inside npm run-script.
-echo '--- This will FAIL!'
+echo '--- This will WORK on debian!'
+echo '--- This will FAIL on ubuntu!'
 npm run test
