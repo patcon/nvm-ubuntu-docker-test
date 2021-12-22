@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-nvm install v14
+nvm install v14 --no-progress
 npm install --global npm@6.x
 
 # Debug output
