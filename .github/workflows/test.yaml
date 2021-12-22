@@ -1,6 +1,6 @@
 on:
   push:
-    - paths-ignore: ['**/*.md']
+    paths-ignore: ['**/*.md']
 
 jobs:
   runner:
