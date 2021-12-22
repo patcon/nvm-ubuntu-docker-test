@@ -20,7 +20,7 @@ Error shows up as:
   - npm version is => 7.x (works fine with most recent 6.x)
 
 Example of specifically failing CI run of [`test.sh`](./test.sh) scripts:
-https://github.com/patcon/nvm-ubuntu-docker-test/runs/4612693589
+https://github.com/patcon/nvm-ubuntu-docker-test/runs/4612880756
 
 ## Usage
 
