@@ -6,8 +6,12 @@ services:
     build:
       context: .
       dockerfile: ubuntu.Dockerfile
+    volumes:
+      - .:/var/www/html/test
 
   node-debian:
     build:
       context: .
       dockerfile: node-debian.Dockerfile
+    volumes:
+      - .:/var/www/html/test

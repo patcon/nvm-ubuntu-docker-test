@@ -1,5 +1,6 @@
 {
   "scripts": {
-    "test": "./bin/test-env-node"
+    "test": "./bin/test-env-node",
+    "check-path": "echo $PATH"
   }
 }
