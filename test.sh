@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-nvm install v14 --no-progress
+nvm install --no-progress v14
 npm install --global npm@6.x
 
 # Debug output
@@ -10,9 +10,11 @@ node --version
 npm --version
 npm run check-path
 
-# Run outside npm run-script: Should work!
+# Run outside npm run-script.
+echo '--- This will work!'
 ./bin/test-env-node
-# Run inside npm run-script: Should work!
+# Run inside npm run-script.
+echo '--- This will work!'
 npm run test
 
 npm install --global npm@7.0.0
@@ -22,7 +24,9 @@ node --version
 npm --version
 npm run check-path
 
-# Run outside npm run-script: Should work!
+# Run outside npm run-script.
+echo '--- This will work!'
 ./bin/test-env-node
-# Run inside npm run-script: Should FAIL!
+# Run inside npm run-script.
+echo '--- This will FAIL!'
 npm run test
