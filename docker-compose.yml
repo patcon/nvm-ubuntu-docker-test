@@ -1,0 +1,11 @@
+version: '3.1'
+
+services:
+
+  ubuntu:
+    build:
+      dockerfile: ubuntu.Dockerfile
+
+  node-debian:
+    build:
+      dockerfile: node-debian.Dockerfile
