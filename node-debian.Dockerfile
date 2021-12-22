@@ -5,5 +5,5 @@ FROM node:lts-bullseye
 RUN wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
 
 WORKDIR /var/www/html/app
-COPY test.sh package.json ./
+COPY test.sh package.json .nvmrc ./
 COPY bin/ ./bin/
