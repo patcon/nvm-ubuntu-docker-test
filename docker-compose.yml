@@ -3,15 +3,24 @@ version: '3.1'
 services:
 
   ubuntu:
+    working_dir: /root/scripts
     build:
       context: .
       dockerfile: ubuntu.Dockerfile
     volumes:
-      - .:/var/www/html/test
+      - maintenancedata:/root
+      - ./scripts:/root/scripts
+      - ./app:/var/www/html/app
 
   node-debian:
+    working_dir: /root/scripts
     build:
       context: .
       dockerfile: node-debian.Dockerfile
     volumes:
-      - .:/var/www/html/test
+      - maintenancedata:/root
+      - ./scripts:/root/scripts
+      - ./app:/var/www/html/app
+
+volumes:
+  maintenancedata:
