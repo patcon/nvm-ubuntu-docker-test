@@ -2,6 +2,6 @@
 
 set -euo pipefail
 
-nvm install --latest-npm
+nvm install
 npm run test
 npm run check-path
