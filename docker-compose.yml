@@ -25,6 +25,3 @@ services:
     volumes:
       - ./scripts:/root/scripts
       - ./app:/var/www/html/app
-
-volumes:
-  maintenancedata:
