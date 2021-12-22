@@ -7,6 +7,9 @@ services:
     build:
       context: .
       dockerfile: ubuntu.Dockerfile
+    deploy:
+      mode: replicated
+      replicas: 0
     volumes:
       - maintenancedata:/root
       - ./scripts:/root/scripts
@@ -17,6 +20,9 @@ services:
     build:
       context: .
       dockerfile: node-debian.Dockerfile
+    deploy:
+      mode: replicated
+      replicas: 0
     volumes:
       - maintenancedata:/root
       - ./scripts:/root/scripts
