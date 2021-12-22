@@ -9,7 +9,7 @@ services:
       dockerfile: ubuntu.Dockerfile
     volumes:
       - ./scripts:/root/scripts
-      - ./app:/var/www/html/app
+      - .:/var/www/html/app
 
   node-debian:
     working_dir: /root/scripts
@@ -18,4 +18,4 @@ services:
       dockerfile: node-debian.Dockerfile
     volumes:
       - ./scripts:/root/scripts
-      - ./app:/var/www/html/app
+      - .:/var/www/html/app
