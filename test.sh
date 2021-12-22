@@ -3,7 +3,7 @@
 set -euo pipefail
 
 nvm install
-npm install --global npm@6.x
+npm install --global npm@7.x
 
 # Debug output
 node --version
