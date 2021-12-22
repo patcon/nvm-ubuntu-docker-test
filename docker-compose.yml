@@ -3,17 +3,17 @@ version: '3.1'
 services:
 
   ubuntu:
-    working_dir: /var/app
+    working_dir: /app
     build:
       context: .
       dockerfile: ubuntu.Dockerfile
     volumes:
-      - .:/var/app
+      - .:/app
 
   node-debian:
-    working_dir: /var/app
+    working_dir: /app
     build:
       context: .
       dockerfile: node-debian.Dockerfile
     volumes:
-      - .:/var/app
+      - .:/app
