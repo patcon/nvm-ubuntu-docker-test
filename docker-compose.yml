@@ -10,10 +10,10 @@ services:
     volumes:
       - .:/app
 
-  node-debian:
+  debian:
     working_dir: /app
     build:
       context: .
-      dockerfile: node-debian.Dockerfile
+      dockerfile: debian.Dockerfile
     volumes:
       - .:/app

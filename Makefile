@@ -4,7 +4,7 @@ setup:
 test-all: test-debian test-ubuntu
 
 test-debian:
-	docker-compose run --rm node-debian bash -i test.sh
+	docker-compose run --rm debian bash -i test.sh
 
 test-ubuntu:
 	docker-compose run --rm ubuntu bash -i test.sh
