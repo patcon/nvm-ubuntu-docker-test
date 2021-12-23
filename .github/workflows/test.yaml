@@ -26,6 +26,8 @@ jobs:
 
     - name: "Run debian test"
       run: make test-debian
+      if: ${{ always() }}
 
     - name: "Run ubuntu test"
       run: make test-ubuntu
+      if: ${{ always() }}
