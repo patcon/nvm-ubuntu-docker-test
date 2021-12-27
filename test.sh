@@ -7,6 +7,7 @@ FAILING_NODE_VERSION=7.0.0
 
 nvm install --no-progress v14
 npm install --global npm@${WORKING_NODE_VERSION}
+nvm debug
 
 # Debug output
 echo '--- Checking bare PATH...'
@@ -23,6 +24,7 @@ echo '--- This will work!'
 npm run test
 
 npm install --global npm@${FAILING_NODE_VERSION}
+nvm debug
 
 # Debug output
 echo '--- Checking bare PATH...'
