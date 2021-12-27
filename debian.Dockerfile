@@ -5,4 +5,4 @@ FROM debian:latest
 RUN apt-get update && apt-get install wget -y
 RUN wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
 
-RUN apt-get install nodejs -y
+RUN apt-get install nodejs npm -y
