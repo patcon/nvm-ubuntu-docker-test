@@ -9,8 +9,6 @@ nvm install --no-progress v14
 npm install --global npm@${WORKING_NODE_VERSION}
 
 # Debug output
-node --version
-npm --version
 echo '--- Checking bare PATH...'
 echo $PATH
 echo '--- Checking run-script wrapped PATH...'
@@ -18,7 +16,8 @@ npm run check-path
 
 # Run outside npm run-script.
 echo '--- This will work!'
-./bin/test-env-node
+node --version
+npm --version
 # Run inside npm run-script.
 echo '--- This will work!'
 npm run test
@@ -26,8 +25,6 @@ npm run test
 npm install --global npm@${FAILING_NODE_VERSION}
 
 # Debug output
-node --version
-npm --version
 echo '--- Checking bare PATH...'
 echo $PATH
 echo '--- Checking run-script wrapped PATH...'
@@ -35,7 +32,8 @@ npm run check-path
 
 # Run outside npm run-script.
 echo '--- This will work!'
-./bin/test-env-node
+node --version
+npm --version
 # Run inside npm run-script.
 echo '--- This will WORK on official container: node!'
 echo '--- This will FAIL on official container: debian!'

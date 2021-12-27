@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "test": "./bin/test-env-node",
+    "test": "node --version; npm --version",
     "check-path": "echo $PATH"
   }
 }

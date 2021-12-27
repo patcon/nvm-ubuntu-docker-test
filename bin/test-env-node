@@ -1,4 +1,0 @@
-#!/usr/bin/env node
-
-console.log('Node version: ', process.version);
-console.log('Hello, world!');
