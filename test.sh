@@ -3,7 +3,7 @@
 set -euo pipefail
 
 WORKING_NODE_VERSION=6.x
-FAILING_NODE_VERSION=7.0.0
+FAILING_NODE_VERSION=7.0.0-beta.0
 
 nvm install --no-progress v14
 npm install --global npm@${WORKING_NODE_VERSION}
