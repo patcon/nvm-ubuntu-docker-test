@@ -11,6 +11,9 @@ npm install --global npm@${WORKING_NODE_VERSION}
 # Debug output
 node --version
 npm --version
+echo '--- Checking bare PATH...'
+echo $PATH
+echo '--- Checking run-script wrapped PATH...'
 npm run check-path
 
 # Run outside npm run-script.
