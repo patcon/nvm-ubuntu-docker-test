@@ -24,6 +24,7 @@ jobs:
       if: ${{ false }}
       # if: ${{ always() }}
 
+    # Run both steps even when first fails.
     - name: "Run debian test"
       run: make test-debian
       if: ${{ always() }}
